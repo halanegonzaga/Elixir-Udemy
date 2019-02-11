@@ -16,6 +16,9 @@ defmodule Fatura do
   
   @doc """
     Ordenar os itens de faturas
+      ## Exemplos
+      iex> Fatura.orderna_fatura(["Telefone", "Agua", "Luz"])
+      ["Agua", "Luz", "Telefone"]
   """
   def orderna_fatura(faturas) do
     Enum.sort(faturas)
