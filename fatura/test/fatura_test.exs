@@ -11,4 +11,8 @@ defmodule FaturaTest do
     faturas = Fatura.criar_fatura(["Agua", "Rua", "Luz"])
     refute Fatura.orderna_fatura(faturas) == ["Agua", "Rua", "Luz"]
   end
+
+  test "Existe Fatura" do
+    assert Fatura.fatura_existe?(Fatura.criar_fatura(["Telefone", "Agua", "Luz"]), "Agua") == true
+  end
 end
