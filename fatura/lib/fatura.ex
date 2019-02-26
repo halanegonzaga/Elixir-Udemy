@@ -7,19 +7,21 @@ defmodule Fatura do
   @doc """
     Ao receber `fatura` retorna um Array de faturas
       ## Exemplos
-      iex> Fatura.criar_faturas(["Telefone", "Agua", "Luz"], [1,5])
+      iex> Fatura.criar_faturas(["Telefone", "Agua", "Luz"], [1])
       ["Telefone", "Agua", "Luz"]
   """
   def criar_faturas(faturas, vencimentos) do
     
     # Percorrendo Lista
-    lista_de_faturas = for vencimento <- vencimentos, fatura <- faturas do
+    for _vencimento <- vencimentos, fatura <- faturas do
       # String template
-      "Fatura: #{fatura} vence no dia: #{vencimento}"
+      # "Fatura: #{fatura} vence no dia: #{vencimento}"
+      fatura
     end
 
     # União das Listas
-    List.flatten(lista_de_faturas)
+    # lista_de_faturas =  for()
+    # List.flatten(lista_de_faturas)
 
   end
   
@@ -41,5 +43,25 @@ defmodule Fatura do
   """
   def fatura_existe?(faturas, fatura) do
     Enum.member?(faturas,fatura)
+  end
+
+  @doc """
+    Indicar faturas a pagar
+
+    ##Exemplo
+      iex> Fatura.faturas_a_pagar(faturas,1)
+      {["Telefone"], ["Agua", "Luz"]}
+
+      iex> {a_pagar, restante} = Fatura.faturas_a_pagar(faturas,1)
+      {["Telefone"], ["Agua", "Luz"]}
+
+      iex> a_pagar
+      ["Telefone"]
+
+      iex> restante
+      ["Agua", "Luz"]
+  """
+  def  faturas_a_pagar(faturas, quantidade) do
+    Enum.split(faturas, quantidade)
   end
 end
