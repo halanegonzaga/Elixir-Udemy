@@ -19,9 +19,13 @@ defmodule Identidade do
   end
 
   def criar_tabela(%Identidade.Imagem{hex: hex} = imagem) do
-    hex
+    grid = hex
     |> Enum.chunk(3)
     |> Enum.map(&espelhar/1) #passando função dentro de outra
+    |> List.flatten
+    |> Enum.with_index
+
+    %Identidade.Imagem{imagem | grid: grid}
   end
 
   def espelhar(linha) do
