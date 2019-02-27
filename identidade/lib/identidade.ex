@@ -6,6 +6,7 @@ defmodule Identidade do
     |> criar_cor
     |> criar_tabela
     |> remover_impar
+    |> constroi_pixel
   end
 
   def hash_input(input) do
@@ -40,5 +41,18 @@ defmodule Identidade do
     end
 
     %Identidade.Imagem{imagem | grid: new_grid}
+  end
+
+  def constroi_pixel(%Identidade.Imagem{grid: grid} = imagem) do
+    pixel_map = Enum.map grid, fn {_valor, indice} ->
+      h = rem(indice, 5) * 50
+      v = div(indice, 5) * 50
+      t_esquerda = {h, v}
+      t_direita = {h + 50, v + 50}
+
+      {t_esquerda, t_direita}
+    end
+
+    %Identidade.Imagem{imagem | pixel_map: pixel_map}
   end
 end
