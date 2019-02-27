@@ -20,11 +20,9 @@
     <header>
       <nav class="light-blue">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="/" class="brand-logo">Logo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html">Link 1</a></li>
-              <li><a href="badges.html">Link 2</a></li>
-              <li><a href="collapsible.html">JS</a></li>
+              <li><a href="/">Home</a></li>
             </ul>
         </div>
     </nav>

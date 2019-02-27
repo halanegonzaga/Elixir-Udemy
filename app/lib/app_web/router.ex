@@ -17,7 +17,9 @@ defmodule AppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/new", TarefaController, :new
+
+    get "/tarefa/new", TarefaController, :new
+    post "/tarefas", TarefaController, :create
   end
 
   # Other scopes may use custom stacks.
