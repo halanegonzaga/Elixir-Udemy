@@ -1,0 +1,14 @@
+<h4>Lista de Tarefas</h4>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Pronto?</th>
+    </tr>
+<%= for tarefa <- @tarefas do %>
+    <tr>
+        <td><%= tarefa.titulo %></td>
+        <td><%= gettext "Status - %{pronta}",pronta: tarefa.pronta %></td>
+    </tr>
+<%= end %>
+</table>
