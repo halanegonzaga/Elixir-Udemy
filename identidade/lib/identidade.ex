@@ -60,10 +60,10 @@ defmodule Identidade do
 
   def desenhar(%Identidade.Imagem{color: cor, pixel_map: pixel_map}) do
     imagem = :egd.create(250, 250)
-    preencha = :egd.color(cor)
+    cor = :egd.color(cor)
 
     Enum.each pixel_map, fn {start, stop} ->
-      :egd.filledRectangle(imagem, start, stop, preencha)
+      :egd.filledRectangle(imagem, start, stop, cor)
     end
 
     :egd.render(imagem)
