@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c59eb235-807a-44e8-aca3-2deb04a3c038" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/identidade/lib/identidade.ex" beforeDir="false" afterPath="$PROJECT_DIR$/identidade/lib/identidade.ex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/lib/app/tarefas/tarefa.ex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fatura/assets/node_modules/phoenix/" />
     <ignored path="$PROJECT_DIR$/fatura/assets/node_modules/phoenix_html/" />
@@ -25,52 +26,72 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fatura/lib/fatura.ex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="65" column="35" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/page_controller.ex">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fatura/mix.exs">
+        <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="28" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="28" />
+            <state relative-caret-position="90">
+              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/identidade/lib/identidade.ex">
+        <entry file="file://$PROJECT_DIR$/app/lib/app/tarefas/tarefa.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+            <state relative-caret-position="225">
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/identidade/lib/imagem.ex">
+        <entry file="file://$PROJECT_DIR$/app/lib/app.ex">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lib/app_web.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="54" lean-forward="true" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+            <state relative-caret-position="368">
+              <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/identidade/mix.exs">
+        <entry file="file://$PROJECT_DIR$/app/lib/app_web/router.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/priv/repo/migrations/20190227172740_criar_tarefas.exs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/identidade/test/identidade_test.exs">
+        <entry file="file://$PROJECT_DIR$/app/config/test.exs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.exs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lib/app/application.ex">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -79,8 +100,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Elixir Module" />
         <option value="Elixir Application" />
+        <option value="Elixir Module" />
       </list>
     </option>
   </component>
@@ -99,6 +120,15 @@
         <option value="$PROJECT_DIR$/identidade/mix.exs" />
         <option value="$PROJECT_DIR$/identidade/lib/imagem.ex" />
         <option value="$PROJECT_DIR$/identidade/lib/identidade.ex" />
+        <option value="$PROJECT_DIR$/app/config/prod.secret.exs" />
+        <option value="$PROJECT_DIR$/app/config/dev.exs" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/templates/page/index.html.eex" />
+        <option value="$PROJECT_DIR$/app/priv/repo/migrations/20190227172740_criar_tarefas.exs" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/router.ex" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/controllers/tarefa__controller.ex" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex" />
+        <option value="$PROJECT_DIR$/app/lib/app/tarefas/tarefa.ex" />
       </list>
     </option>
   </component>
@@ -122,36 +152,101 @@
             <path>
               <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="fatura" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="fatura" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="identidade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="identidade" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="identidade" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
               <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
-              <item name="identidade" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app_web" type="462c0819:PsiDirectoryNode" />
+              <item name="channels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app_web" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app_web" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="gettext" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="gettext" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="gettext" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="LC_MESSAGES" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="repo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="priv" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -162,7 +257,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551280108244" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551290552526" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -318,7 +413,7 @@
     <entry file="file://$PROJECT_DIR$/identidade/lib/imagem.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="54" lean-forward="true" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
+          <caret line="1" column="54" selection-start-line="1" selection-start-column="54" selection-end-line="1" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -336,8 +431,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/identidade/lib/identidade.ex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="65" column="51" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/prod.secret.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/prod.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-284" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/dev.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="53" column="36" lean-forward="true" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app/repo.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/channels/user_socket.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/views/error_view.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/views/error_helpers.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/gettext.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/endpoint.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/views/layout_view.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/views/page_view.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/page/index.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/priv/gettext/en/LC_MESSAGES/errors.po">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/priv/gettext/errors.pot">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/test.exs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.exs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app/application.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/page_controller.ex">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/router.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/priv/repo/migrations/20190227172740_criar_tarefas.exs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app/tarefas/tarefa.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
         </state>
       </provider>
     </entry>
