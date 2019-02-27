@@ -16,10 +16,14 @@ defmodule AppWeb.Router do
   scope "/", AppWeb do
     pipe_through :browser
 
-    get "/", TarefaController, :index
-    post "/", TarefaController, :create
+#    get "/", TarefaController, :index
+#    post "/", TarefaController, :create
+#    get "/new", TarefaController, :new
+#    get "/:id/edit", TarefaController, :edit
+#    put "/:id", TarefaController, :update
+#    delete "/:id", TarefaController, :delete
 
-    get "/new", TarefaController, :new
+    resources("/", TarefaController)
   end
 
   # Other scopes may use custom stacks.

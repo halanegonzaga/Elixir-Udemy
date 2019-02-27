@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c59eb235-807a-44e8-aca3-2deb04a3c038" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/edit.html.eex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/app_web/controllers/page_controller.ex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lib/app_web/router.ex" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/app_web/router.ex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/app_web/templates/page/index.html.eex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/new.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/new.html.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/tarefas.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/index.html.eex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lib/app_web/views/page_view.ex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/index.html.eex" beforeDir="false" afterPath="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/index.html.eex" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/fatura/assets/node_modules/phoenix/" />
     <ignored path="$PROJECT_DIR$/fatura/assets/node_modules/phoenix_html/" />
@@ -31,11 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/lib/app_web/router.ex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="38" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="38" />
+            <state relative-caret-position="624">
+              <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -50,10 +57,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/tarefa/edit.html.eex">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="225">
+              <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
             </state>
           </provider>
         </entry>
@@ -67,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/tarefa/index.html.eex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            <state relative-caret-position="180">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -81,15 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lib/app_web/router.ex">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -144,11 +151,12 @@
         <option value="$PROJECT_DIR$/app/lib/app/tarefas/tarefa.ex" />
         <option value="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/tarefas.html.eex" />
         <option value="$PROJECT_DIR$/app/lib/app/repo.ex" />
-        <option value="$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex" />
         <option value="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/new.html.eex" />
-        <option value="$PROJECT_DIR$/app/lib/app_web/router.ex" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/edit.html.eex" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex" />
         <option value="$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex" />
         <option value="$PROJECT_DIR$/app/lib/app_web/templates/tarefa/index.html.eex" />
+        <option value="$PROJECT_DIR$/app/lib/app_web/router.ex" />
       </list>
     </option>
   </component>
@@ -241,6 +249,15 @@
               <item name="lib" type="462c0819:PsiDirectoryNode" />
               <item name="app_web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Elixir-Udemy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Elixir-Udemy" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="app_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="tarefa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,12 +276,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551296303878" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551299690512" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/lib/app_web/templates/tarefa" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -323,13 +345,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/websocket/lib/router.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/websocket/websocket.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -518,13 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/app_web/views/tarefa_view.ex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -539,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/app_web/router.ex">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/tarefa/new.html.eex">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -553,17 +554,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex">
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/tarefa/edit.html.eex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="38" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="38" />
+        <state relative-caret-position="180">
+          <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/layout/app.html.eex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="90" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lib/app_web/templates/tarefa/index.html.eex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        <state relative-caret-position="180">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/controllers/tarefa_controller.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lib/app_web/router.ex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
         </state>
       </provider>
     </entry>

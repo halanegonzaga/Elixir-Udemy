@@ -4,11 +4,35 @@
     <tr>
         <th>Nome</th>
         <th>Pronto?</th>
+        <th>Ações</th>
     </tr>
 <%= for tarefa <- @tarefas do %>
     <tr>
         <td><%= tarefa.titulo %></td>
         <td><%= gettext "Status - %{pronta}",pronta: tarefa.pronta %></td>
+        <td>
+            <div class="secondary-content ">
+            <%= link to: Routes.tarefa_path(@conn, :edit, tarefa), class: "btn btn-primary", style: "margin-right: 10px" do %>
+               <i class="material-icons">edit</i>
+            <%= end %>
+
+            <%= link to: Routes.tarefa_path(@conn, :delete, tarefa), class: "btn btn-primary", method: :delete do %>
+               <i class="material-icons">delete</i>
+            <%= end %>
+            </div>
+        </td>
     </tr>
 <%= end %>
 </table>
+
+<div class="fixed-action-btn">
+<!--
+    <a href="/new" class="btn-floating btn-large waves-effect waves-light red">
+       <i class="material-icons">add</i>
+    </a>
+
+-->
+    <%= link to: Routes.tarefa_path(@conn, :new), class: "btn-floating btn-large waves-effect waves-light red" do %>
+       <i class="material-icons">add</i>
+    <%= end %>
+</div>
