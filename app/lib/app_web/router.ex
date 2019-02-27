@@ -26,6 +26,13 @@ defmodule AppWeb.Router do
     resources("/", TarefaController)
   end
 
+  scope "/auth", AppWeb do
+    pipe_through :browser
+
+    get "/:provider", AuthController, :request
+    get "/:provider/callback", AuthController, :callback
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", AppWeb do
   #   pipe_through :api
