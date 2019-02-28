@@ -25,6 +25,9 @@
 
             <%= if @conn.assigns[:user] do %>
               <li>
+                <%= gettext "Bem Vindo!! %{nome}", nome: @conn.assigns.user.nome %>
+              </li>
+              <li>
                 <%= link "Logout", to: Routes.auth_path(@conn, :logout, "github")  %>
               </li>
             <% else  %>

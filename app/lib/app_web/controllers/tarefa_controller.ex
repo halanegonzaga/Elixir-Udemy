@@ -24,7 +24,7 @@ defmodule AppWeb.TarefaController do
   end
 
   def index(conn, params) do
-    IO.inspect conn
+    IO.inspect conn.assigns.user
     render conn, "index.html", tarefas: Repo.all(Tarefa)
   end
 
