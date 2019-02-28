@@ -3,6 +3,8 @@ defmodule AppWeb.TarefaController do
 
   alias App.{Tarefa, Repo}
 
+  plug AppWeb.Plug.RequireAuth when action in [:create, :update, :edit, :new]
+
   def new(conn, _params) do
     changeset = Tarefa.changeset(%Tarefa{})
 
