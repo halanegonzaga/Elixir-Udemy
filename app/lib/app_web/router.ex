@@ -31,6 +31,7 @@ defmodule AppWeb.Router do
 
     get "/:provider", AuthController, :request
     get "/:provider/callback", AuthController, :callback
+    get "/:provider/logout", AuthController, :logout
   end
 
   # Other scopes may use custom stacks.

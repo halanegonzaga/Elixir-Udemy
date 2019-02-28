@@ -22,7 +22,14 @@
         <div class="nav-wrapper">
             <a href="/" class="brand-logo">Logo</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="/">Home</a></li>
+
+            <%= if @conn.assigns[:user] do %>
+              <li>
+                <%= link "Logout", to: Routes.auth_path(@conn, :logout, "github")  %>
+              </li>
+            <% else  %>
+                <%= link "Login", to: Routes.auth_path(@conn, :request, "github")  %>
+            <% end %>
             </ul>
         </div>
     </nav>
