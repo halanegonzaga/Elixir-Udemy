@@ -2,11 +2,14 @@ defmodule App.Usuario do
   use Ecto.Schema
   import Ecto.Changeset
 
+  alias App.Tarefa
+
   schema "usuarios" do
     field :nome, :string
     field :email, :string
     field :token, :string
     field :provider, :string
+    has_many :tarefas, Tarefa
     timestamps()
   end
 

@@ -1,3 +1,4 @@
+<%= if @conn.assigns[:user] do %>
 <h4>Lista de Tarefas</h4>
 
 <table class="table">
@@ -36,3 +37,6 @@
        <i class="material-icons">add</i>
     <%= end %>
 </div>
+<%= else %>
+    <h4 style="text-center">Faça Login</h4>
+<%= end %>

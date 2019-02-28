@@ -3,7 +3,8 @@ defmodule AppWeb.TarefaController do
 
   alias App.{Tarefa, Repo}
 
-  plug AppWeb.Plug.RequireAuth when action in [:create, :update, :edit, :new]
+  plug AppWeb.Plug.RequireAuth when action in [:create, :update, :edit, :new, :delete]
+  plug :verifica_permissao when action in[:update, :edit, :delete]
 
   def new(conn, _params) do
     changeset = Tarefa.changeset(%Tarefa{})
@@ -12,7 +13,11 @@ defmodule AppWeb.TarefaController do
   end
 
   def create(conn, %{"tarefa" => tarefa}) do
-    changeset = Tarefa.changeset(%Tarefa{}, tarefa)
+    changeset =
+      conn.assigns.user
+      |> Ecto.build_assoc(:tarefas)
+      |> Tarefa.changeset(tarefa)
+
     case Repo.insert changeset do
       {:ok, struct} ->
         conn
@@ -60,5 +65,18 @@ defmodule AppWeb.TarefaController do
     conn
     |> put_flash(:info, "Tarefa deletada com sucesso")
     |> redirect(to: Routes.tarefa_path(conn, :index))
+  end
+
+  def verifica_permissao(conn, _params) do
+    %{params: %{"id" => tarefa_id}} = conn
+
+    if Repo.get(Tarefa, tarefa_id).usuario_id == conn.assigns.user.id do
+        conn
+      else
+        conn
+        |> put_flash(:error, "403 você não tem permissão!")
+        |> redirect(to: Routes.tarefa_path(conn, :index))
+        |> halt
+    end
   end
 end

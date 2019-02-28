@@ -15,6 +15,7 @@ defmodule AppWeb.Plug.RequireAuth do
       conn
       |> put_flash(:error, "Você precisa estar logado!")
       |> redirect(to: Helpers.tarefa_path(conn, :index))
+      |> halt #Parar a ação
     end
   end
 
